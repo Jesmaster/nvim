@@ -2,6 +2,7 @@ return {
   "neovim/nvim-lspconfig",
   opts = {
     servers = {
+      cssls = {},
       emmet_language_server = {},
       htmx = {},
       phpactor = {
