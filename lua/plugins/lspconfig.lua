@@ -11,6 +11,7 @@ return {
           { "<leader>]d", "vim.diagnostic.goto_next", desc = "Go to next diagnostic" },
         },
       },
+      twig_language_server = {},
     },
     setup = {
       emmet_language_server = function(_, opts)
@@ -22,6 +23,9 @@ return {
         local htmx = require("lspconfig.server_configurations.htmx")
         opts.filetypes = htmx.default_config.filetypes
         vim.list_extend(opts.filetypes, { "twig" })
+      end,
+      twig_language_server = function(_, opts)
+        opts.cmd = { "twiggy-language-server", "--stdio" }
       end,
     },
   },
