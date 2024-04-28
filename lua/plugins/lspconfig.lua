@@ -5,13 +5,17 @@ return {
       cssls = {},
       emmet_language_server = {},
       htmx = {},
+      intelephense = {},
       phpactor = {
-        keys = {
-          { "<leader>[d", "vim.diagnostic.goto_prev", desc = "Go to previous diagnostic" },
-          { "<leader>]d", "vim.diagnostic.goto_next", desc = "Go to next diagnostic" },
+        autostart = false,
+      },
+      twiggy_language_server = {
+        twiggy = {
+          framework = "symfony",
+          phpExecutable = "/opt/homebrew/bin/php",
+          symfonyConsolePath = "bin/console",
         },
       },
-      twiggy_language_server = {},
     },
     setup = {
       emmet_language_server = function(_, opts)
