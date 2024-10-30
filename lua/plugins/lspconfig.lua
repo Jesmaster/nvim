@@ -18,7 +18,7 @@ return {
     },
     setup = {
       emmet_language_server = function(_, opts)
-        local emmet = require("lspconfig.server_configurations.emmet_language_server")
+        local emmet = require("lspconfig.configs.emmet_language_server")
         opts.filetypes = emmet.default_config.filetypes
         vim.list_extend(opts.filetypes, { "twig" })
       end,

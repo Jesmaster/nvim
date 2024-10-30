@@ -9,3 +9,9 @@ opt.softtabstop = 4
 opt.shiftwidth = 4
 
 vim.lsp.set_log_level("off")
+
+vim.filetype.add({
+  extension = {
+    pcss = "css",
+  },
+})
