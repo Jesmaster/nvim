@@ -2,12 +2,15 @@ return {
   "neovim/nvim-lspconfig",
   opts = {
     servers = {
-      cssls = {},
+      cssls = {
+        settings = {
+          css = {
+            validate = false,
+          },
+        },
+      },
       emmet_language_server = {},
       intelephense = {},
-      phpactor = {
-        autostart = false,
-      },
       twiggy_language_server = {
         twiggy = {
           framework = "symfony",

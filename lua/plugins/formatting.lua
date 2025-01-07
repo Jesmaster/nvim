@@ -11,7 +11,6 @@ return {
     },
     formatters_by_ft = {
       ["pcss"] = { "prettierd" },
-      ["lua"] = { "stylua" },
       ["php"] = { "php_cs_fixer" }, -- Symfony
       -- ["php"] = { "phpcbf" }, -- Drupal
       ["twig"] = { "twig-cs-fixer" },

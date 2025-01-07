@@ -4,6 +4,7 @@ return {
     opts = {
       linters_by_ft = {
         -- php = { "phpcs" }, -- Drupal
+        css = { "stylelint" },
         twig = { "twigcs" },
       },
       linters = {
