@@ -13,7 +13,6 @@ return {
       ["pcss"] = { "prettierd" },
       ["php"] = { "php_cs_fixer" }, -- Symfony
       -- ["php"] = { "phpcbf" }, -- Drupal
-      ["twig"] = { "twig-cs-fixer" },
     },
   },
 }
